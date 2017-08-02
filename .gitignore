@@ -1,5 +1,4 @@
 .DS_Store
-.BIN
 .idea
 *.ai
 *.log
@@ -8,5 +7,5 @@
 *.sublime*
 css/*.css
 node_modules/
-Thumbs.db
 build/
+Thumbs.db
