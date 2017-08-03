@@ -1,9 +1,7 @@
-# Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url] [![Greenkeeper badge](https://badges.greenkeeper.io/yakovlevgleb/mishka.svg)](https://greenkeeper.io/)
+# Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-
-
-* Студент: [Gleb Yakovlev](https://up.htmlacademy.ru/adaptive/10/user/251249).
-* Наставник: [Никита Рогатнев](https://htmlacademy.ru/profile/id86119).
+* Студент: [Alexander Suleymanov](https://up.htmlacademy.ru/adaptive/11/user/289477).
+* Наставник: `Неизвестно`.
 
 ---
 
@@ -11,8 +9,6 @@
 
 - [Specification.md](Specification.md) — техническое задание для вашего проекта. Прочтите его и следуйте требованиям.
 - [Contributing.md](Contributing.md) — руководство по внесению изменений.
-
---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
 _`.editorconfig`, `.gitattributes`, `.gitignore`, `.travis.yml`, `package.json`._
@@ -39,7 +35,7 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `.travis.yml`, `package.json`.
 
 Будьте внимательны: нужно клонировать свой репозиторий (форк), а не репозиторий Академии. Также обратите внимание, что клонировать репозиторий нужно через SSH, а не через HTTPS. Нажмите зелёную кнопку в правой части экрана, чтобы скопировать SSH-адрес вашего репозитория:
 
-<img width="769" alt="" src="https://cloud.githubusercontent.com/assets/10909/15455689/2092071c-206d-11e6-883b-7a92865a0e1d.png">
+<img width="769" alt="" src="https://cloud.githubusercontent.com/assets/10909/26306270/5e6b9eba-3efb-11e7-9817-0d6b7faa21b4.png">
 
 Клонировать репозиторий можно так:
 
@@ -57,7 +53,7 @@ git clone SSH-адрес_вашего_форка
 
 Репозиторий создан для обучения на интенсивном онлайн‑курсе «[Продвинутый HTML и CSS](https://htmlacademy.ru/intensive/adaptive)» от [HTML Academy](https://htmlacademy.ru).
 
-[travis-image]: https://travis-ci.org/htmlacademy-adaptive/251249-mishka.svg?branch=master
-[travis-url]: https://travis-ci.org/htmlacademy-adaptive/251249-mishka
-[dependency-image]: https://david-dm.org/htmlacademy-adaptive/251249-mishka/dev-status.svg?style=flat-square
-[dependency-url]: https://david-dm.org/htmlacademy-adaptive/251249-mishka?type=dev
+[travis-image]: https://travis-ci.org/htmlacademy-adaptive/289477-mishka.svg?branch=master
+[travis-url]: https://travis-ci.org/htmlacademy-adaptive/289477-mishka
+[dependency-image]: https://david-dm.org/htmlacademy-adaptive/289477-mishka/dev-status.svg?style=flat-square
+[dependency-url]: https://david-dm.org/htmlacademy-adaptive/289477-mishka?type=dev
