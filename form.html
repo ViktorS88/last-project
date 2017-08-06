@@ -56,7 +56,7 @@
             <fieldset class="fieldset form__fieldset">
                 <div class="fieldset__wrapper">
                     <div class="fieldset__title">
-                        <legend class="fieldset-title-inner">Тип</legend>
+                        <span class="fieldset__title-inner">Тип</span>
                     </div>
                     <ul class="fieldset__type-list">
                         <li class="fieldset__type-item">
@@ -73,21 +73,91 @@
             <fieldset class="fieldset form__fieldset">
                 <div class="fieldset__wrapper">
                     <div class="fieldset__title">
-                        <legend class="fieldset-title-inner">Цвет</legend>
+                        <span class="fieldset__title-inner">Цвет</span>
                     </div>
                     <ul class="fieldset__color-list">
                         <li class="fieldset__color-item">
                             <input class="fieldset__color-input" type="checkbox" name="color-white" id="color-field-white" checked>
-                            <label class="fieldset__color-label" for="color-field-white">Аксессуар для интерьера</label>
+                            <label class="fieldset__color-label" for="color-field-white">Белый</label>
                         </li>
                         <li class="fieldset__color-item">
-                            <input class="fieldset__color-input" type="checkbox" name="color-gray" id="type-field-gray" checked>
-                            <label class="fieldset__color-label" for="type-field-2">Детская игрушка</label>
+                            <input class="fieldset__color-input" type="checkbox" name="color-gray" id="color-field-gray" checked>
+                            <label class="fieldset__color-label" for="color-field-gray">Серый</label>
+                        </li>
+                        <li class="fieldset__color-item">
+                            <input class="fieldset__color-input" type="checkbox" name="color-tiffany" id="color-field-tiffany">
+                            <label class="fieldset__color-label" for="color-field-tiffany">"Тиффани"</label>
+                        </li>
+                        <li class="fieldset__color-item">
+                            <input class="fieldset__color-input" type="checkbox" name="color-black" id="color-field-black">
+                            <label class="fieldset__color-label" for="color-field-black">Черный</label>
+                        </li>
+                        <li class="fieldset__color-item">
+                            <input class="fieldset__color-input" type="checkbox" name="color-pink" id="color-field-pink">
+                            <label class="fieldset__color-label" for="color-field-pink">Розовый</label>
+                        </li>
+                        <li class="fieldset__color-item">
+                            <input class="fieldset__color-input" type="checkbox" name="color-orange" id="color-field-orange">
+                            <label class="fieldset__color-label" for="color-field-orange">Оранжевый</label>
                         </li>
                     </ul>
                 </div>
             </fieldset>
-
+            <fieldset class="fieldset form__fieldset">
+                <div class="fieldset__wrapper">
+                    <div class="fieldset__title">
+                        <span class="fieldset__title-inner">ФИО</span>
+                    </div>
+                    <ul class="fieldset__fullname-list">
+                        <li class="fieldset__fullname-item">
+                            <label class="fieldset__fullname-label" for="fullname-field-name">Имя</label>
+                            <input class="fieldset__fullname-input" type="text" name="fullname-name" id="fullname-field-name" placeholder="Введите ваше имя*" required>
+                        </li>
+                        <li class="fieldset__fullname-item">
+                            <label class="fieldset__fullname-label" for="fullname-field-surname">Фамилия</label>
+                            <input class="fieldset__fullname-input" type="text" name="fullname-surname" id="fullname-field-surname" placeholder="Укажите фамилию*" required>
+                        </li>
+                        <li class="fieldset__fullname-item">
+                            <label class="fieldset__fullname-label" for="fullname-field-patronymic">Отчество</label>
+                            <input class="fieldset__fullname-input" type="text" name="fullname-patronymic" id="fullname-field-patronymic" placeholder="Отчество, если желаете">
+                        </li>
+                    </ul>
+                </div>
+            </fieldset>
+            <fieldset class="fieldset form__fieldset">
+                <div class="fieldset__wrapper">
+                    <div class="fieldset__title">
+                        <span class="fieldset__title-inner">Тел</span>
+                    </div>
+                    <ul class="fieldset__tel-list">
+                        <li class="fieldset__tel-item">
+                            <label class="fieldset__tel-label" for="tel-field">Имя</label>
+                            <input class="fieldset__tel-input" type="tel" name="tel" id="tel-field" placeholder="+7 XXX-XXX-XX-XX*" required>
+                        </li>
+                    </ul>
+                    <div class="fieldset__title">
+                        <span class="fieldset__title-inner">E-MAIL</span>
+                    </div>
+                    <ul class="fieldset__contacts-list">
+                        <li class="fieldset__contacts-item">
+                            <label class="fieldset__contacts-label" for="email-field">Имя</label>
+                            <input class="fieldset__contacts-input" type="email" name="email" id="email-field" placeholder="Ваш Email*" required>
+                        </li>
+                    </ul>
+                </div>
+            </fieldset>
+            <fieldset class="fieldset form__fieldset">
+                <div class="fieldset__wrapper">
+                    <div class="fieldset__title">
+                        <span class="fieldset__title-inner">Доп</span>
+                    </div>
+                    <textarea name="fieldset__add-info" rows="8" cols="80">Опешите все ваши пожелания к заказу</textarea>
+                </div>
+            </fieldset>
+            <div class="form__comment">
+                <span class="form__comment-inner">*Поля обезательны для заполнения</span>
+            </div>
+            <button class="btn form__btn">Отправить заказ</button>
         </form>
     </main>
     <footer class="page-footer">
