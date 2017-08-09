@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>flex </title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style__flex-grow.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body >
+    <div class="arifmetic__flex-grow">
+
+Расчет: X(то значение которое хотим получить) - flex-basis(элементов).<br/>
+Произведем реальный расчет со всеми элементами:<br/>
+ 100 - 55   = 45                                  /5 итого flex-grow равен 9<br/>
+ 50   - 45   =  <span>5 ( это и есть НОД) </span>     /5 итого
+ flex-grow равен 1<br/>
+ 150 - 125 = 25                                  /5 итого flex-grow равен 5<br/>
+ 200 - 15   = 185                                /5 итого flex-grow равен 37<br/>
+ 250 - 155 = 95                                  /5 итого flex-grow равен 19<br/>
+определим НОД (наибольший общий делитель) и поделим все итоги на него!<br/>
+До:
+    </div>
+    <div class="flex-wrap">
+        <div class="flex-elemExample flex-Example1">55</div>
+        <div class="flex-elemExample flex-Example2">45</div>
+        <div class="flex-elemExample flex-Example3">125</div>
+        <div class="flex-elemExample flex-Example4">15</div>
+        <div class="flex-elemExample flex-Example5">155</div>
+    </div>
+После применения flex-grow:
+    <div class="flex-wrap">
+        <div class="flex-elem flex-elem1">55<br/>flex-grow: 9</div>
+        <div class="flex-elem flex-elem2">45<br/>flex-grow: 1;</div>
+        <div class="flex-elem flex-elem3">125<br/>flex-grow: 5;</div>
+        <div class="flex-elem flex-elem4">15<br/>flex-grow: 37;</div>
+        <div class="flex-elem flex-elem5">155<br/>flex-grow: 19;</div>
+    </div>
+    <div class="metr">
+        <div class="metr__elem metr__elem1">100</div>
+        <div class="metr__elem metr__elem2">50</div>
+        <div class="metr__elem metr__elem3">150</div>
+        <div class="metr__elem metr__elem4">200</div>
+        <div class="metr__elem metr__elem5">250</div>
+        <div class="metr__elem metr__elem6">250</div>
+    </div>
+
+</body>
+
+</html>

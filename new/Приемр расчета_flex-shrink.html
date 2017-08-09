@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>flex-shrink </title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style__flex-shrink.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body >
+    <div class="arifmetic__flex-grow">
+
+Расчет: flex-basis - X(то значение которое хотим получить) / flex-basis. и далее из всех расчетов выберем НОД(наибольший общий делитель и разделим все подсчеты на него) = коэфициэнт flex-shrink для каждого элемента<br/><br/>
+Произведем реальный расчет со всеми элементами:<br/>
+ 250 - 100 / 250  = 0.6                        /0.0625 итого flex-grow равен 9.6<br/>
+ 95   - 50  / 95 =  0.4737                     /0.0625 итого
+ flex-grow равен 7.5792<br/>
+ 160 - 150 / 160= 0.0625 ( это и есть НОД) /0.0625 итого
+ flex-grow равен 1<br/>
+ 220 - 200  / 220 = 0.0909                 /0.0625 итого
+  flex-grow равен  1.4544<br/>
+ 275 - 250 / 275 =  0.0909                /0.0625 итого
+ flex-grow равен 1.454<br/>
+определим НОД (наименьший делитель) и поделим все итоги на него!
+    </div>
+    Было:
+    <div class="flex-wrap">
+        <div class="flex-elemExample flex-Example1">250</div>
+        <div class="flex-elemExample flex-Example2">95</div>
+        <div class="flex-elemExample flex-Example3">160</div>
+        <div class="flex-elemExample flex-Example4">220</div>
+        <div class="flex-elemExample flex-Example5">275</div>
+    </div>
+    Стало после сжатия:
+    <div class="flex-wrap">
+        <div class="flex-elem flex-elem1">250<br/>
+            flex-grow равен 9.6</div>
+        <div class="flex-elem flex-elem2">95<br/>
+           flex-grow равен 7.5792</div>
+        <div class="flex-elem flex-elem3">160<br/>
+            flex-grow равен 1"</div>
+        <div class="flex-elem flex-elem4">220<br/>
+            flex-grow равен  1.4544"</div>
+        <div class="flex-elem flex-elem5">275<br/>
+            flex-grow равен  1.4544"</div>
+    </div>
+    <div class="metr">
+        <div class="metr__elem metr__elem1">100</div>
+        <div class="metr__elem metr__elem2">50</div>
+        <div class="metr__elem metr__elem3">150</div>
+        <div class="metr__elem metr__elem4">200</div>
+        <div class="metr__elem metr__elem5">250</div>
+        <div class="metr__elem metr__elem6">250</div>
+    </div>
+
+</body>
+
+</html>

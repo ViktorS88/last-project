@@ -1,0 +1,118 @@
+body {
+    margin: 20px;
+}
+span {
+    color: red;
+}
+.arifmetic__flex-grow {
+    width: 700px;
+    margin-bottom: 5px;
+}
+.flex-wrap {
+    display: flex;
+    width: 750px;
+    height: 150px;
+    margin-bottom: 5px;
+    border: 1px solid black;
+}
+.flex-elemExample {
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    flex-basis: 25px;
+}
+.flex-elem {
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+.flex-elem:nth-child(2n),
+.flex-elemExample:nth-child(2n) {
+    background: red;
+}
+.flex-elem:nth-child(2n+1),
+.flex-elemExample:nth-child(2n+1) {
+    background: green;
+}
+.flex-Example1 {
+    flex-basis: 55px;
+    flex-grow: 0;
+}
+.flex-Example2 {
+    flex-basis: 45px;
+    flex-grow: 0;
+}
+.flex-Example3 {
+    flex-basis: 125px;
+    flex-grow: 0;
+}
+.flex-Example4 {
+    flex-basis: 15px;
+    flex-grow: 0;
+}
+.flex-Example5 {
+    flex-basis: 155px;
+    flex-grow: 0;
+}
+.flex-elem1 {
+    flex-basis: 55px;
+    flex-grow: 9;
+}
+.flex-elem2 {
+    flex-basis: 45px;
+    flex-grow: 1;
+}
+.flex-elem3 {
+    flex-basis: 125px;
+    flex-grow: 5;
+}
+.flex-elem4 {
+    flex-basis: 15px;
+    flex-grow: 37;
+}
+.flex-elem5 {
+    flex-basis: 155px;
+    flex-grow: 19;
+}
+.metr {
+    display: flex;
+    width: 1000px;
+    height: 20px;
+    border: 1px solid black;
+
+}
+.metr__elem {
+    flex-basis: 25px;
+    color: white;
+    text-align: center;
+}
+.metr__elem:nth-child(2n) {
+    background: blue;
+}
+.metr__elem:nth-child(2n+1) {
+    background: green;
+}
+.metr__elem1 {
+    flex-basis: 100px;
+}
+.metr__elem2 {
+    flex-basis: 50px;
+}
+.metr__elem3 {
+    flex-basis: 150px;
+}
+.metr__elem4 {
+    flex-basis: 200px;
+}
+.metr__elem5{
+    flex-basis: 250px;
+}
+.metr__elem6{
+    border-left: 1px solid black;
+    flex-basis: 250px;
+    background: red;
+}
