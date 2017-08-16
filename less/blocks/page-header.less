@@ -1,3 +1,40 @@
 .page-header {
-    .container();
+  .container();
+}
+@media @tablet-width {
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .page-header__toggle {
+    display: none;
+  }
+  .page-header__logo {
+    width: 47.9%;
+    order: 1;
+  }
+  .main-nav__list {
+    margin: 0;
+    padding: 0;
+    order: 3;
+    list-style: none;
+  }
+  .user-menu__list {
+    margin: 0;
+    padding: 0;
+    order: 2;
+    width: 52%;
+    list-style: none;
+  }
+  .page-header__post {
+    order: 4;
+  }
+
+}
+@media @desktop-width {
+  .main-nav__list {
+    width: 47.9%;
+    order: -1;
+  }
 }

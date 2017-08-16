@@ -6,9 +6,17 @@
   }
 }
 .container() {
-    width: 95%;
+  width: 81.25%;
+  background: gray;
+  margin: 0 auto;
+  @media @tablet-width {
+    width: 87%;
+    max-width: 1050px;
     margin: 0 auto;
-    @media @tablet-width {
-        width: 500px;
-    }
+    background-color: green;
+  }
+  @media @desktop-width {
+    width: 91.3%;
+    background-color: red;
+  }
 }
