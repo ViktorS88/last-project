@@ -1,0 +1,129 @@
+.main-nav--closed .main-nav__wrapper {
+  display: none;
+}
+
+.main-nav--opened .main-nav__wrapper {
+  position: absolute;
+  top: 81px;
+  width: 100%;
+}
+
+.main-nav--closed .main-nav__toggle {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  width: 20px;
+  height: 14px;
+  cursor: pointer;
+  font-size: 0;
+
+  &::after {
+    content: "";
+    top: 0;
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #221f1f;
+    box-shadow:
+    0 6px 0 0 #221f1f,
+    0 12px 0 0 #221f1f;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  position: absolute;
+  top: 30px;
+  right: 32px;
+  width: 21px;
+  height: 21px;
+  cursor: pointer;
+  font-size: 0;
+
+  &::after, &::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    width: 21px;
+    height: 2px;
+    background-color: #221f1f;
+  }
+  &::after {
+    transform: rotate(45deg);
+  }
+  &::before {
+    transform: rotate(-45deg);
+  }
+}
+
+.main-nav--nojs .main-nav__wrapper {
+  display: block;
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav__list,
+.main-nav__user-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__item,
+.user-menu__item {
+  position: relative;
+  display: flex;
+  min-height: 78px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ececec;
+}
+
+.main-nav__link,
+.user-menu__link {
+  display: block;
+  flex-grow: 1;
+  padding: 0;
+  padding-left: 23.75%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  text-decoration: none;
+  .font( 17px; 24px; bold; #000000);
+  background-color: gray;
+}
+
+.user-menu__link::before {
+  content: "";
+  position: absolute;
+  left: 10%;
+  top: 30px;
+  width: 18px;
+  height: 19px;
+  background-color: black; //временный цвет
+}
+
+.user-menu__item:last-child .user-menu__link::before {
+  width: 21px;
+  height: 18px;
+}
+.page-header__post {
+  display: none;
+}
+
+//==========стили для планшета ============
+
+@media @tablet-width {
+  .main-nav--closed .main-nav__wrapper,
+  .main-nav--opened .main-nav__wrapper {
+    display: flex;
+
+    position: static;
+    width: auto;
+  }
+  .main-nav__toggle {
+    display: none;
+  }
+  .page-header__post {
+    display: block;
+  }
+}

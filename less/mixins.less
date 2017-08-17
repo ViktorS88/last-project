@@ -6,9 +6,6 @@
   }
 }
 .container() {
-  width: 81.25%;
-  background: gray;
-  margin: 0 auto;
   @media @tablet-width {
     width: 87%;
     max-width: 1050px;
@@ -19,4 +16,10 @@
     width: 91.3%;
     background-color: red;
   }
+}
+.font(@font-size; @line-height; @font-weight; @font-color) {
+  font-size: @font-size;
+  line-height: @line-height;
+  font-weight: @font-weight;
+  color: @font-color;
 }
