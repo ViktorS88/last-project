@@ -1,4 +1,32 @@
-.page-main__promo {
-    .container-padding();
-    .container();
+.promo {
+  display: flex;
+  flex-direction: column;
+
+  @media @tablet-width {
+  flex-direction: row;
+  }
+  @media @desktop-width {
+
+  }
+}
+.promo__week {
+  order: 2;
+  .font(17px; 20px; bold; #63d1bb);
+}
+.promo__title {
+  margin: 0;
+  margin-top: 32px;
+  .font(25px; 30px; bold; #000000);
+  order: 1;
+
+  @media @tablet-width {
+  order: 2;
+  }
+}
+.promo__info {
+  order: 3;
+
+}
+.promo__img-wrapper {
+  order: 4;
 }
