@@ -15,7 +15,7 @@
     <h1 class="visually-hidden">Mishka - магазин изделий ручной работы</h1>
     <nav class="nav page-header__nav nav--closed nav--nojs">
       <div class="nav__logo">
-        <img src="img/logo-mobile.svg" width="86" height="35" alt="логотип 'Mishka'">
+        <img class="nav__logo-img" src="img/logo-mobile.svg" width="86" height="35" alt="логотип 'Mishka'">
       </div>
       <div class="nav__toggle">открыть меню</div>
       <ul class="main-menu nav__main-menu ">
@@ -58,66 +58,86 @@
         </li>
       </ul>
     </section>
-    <section class="promo page-main__promo">
-      <span class="promo__week">Товар недели</span>
-      <h3 class="promo__title">Вязаные корзинки</h3>
-      <div class="promo__info">
-        <p class="promo__descr">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
-        <table class="promo__table">
-          <tr class="promo__row">
-            <td class="promo__row-title">Цвет</td>
-            <td class="promo__value">"Тиффани"/серый</td>
-          </tr>
-          <tr class="promo__row">
-            <td class="promo__row-title">Диаметр</td>
-            <td class="promo__value">25 см</td>
-          </tr>
-          <tr class="promo__row">
-            <td class="promo__row-title">Высота</td>
-            <td class="promo__value">15 см</td>
-          </tr>
-        </table>
-        <span class="promo__cost">Цена: 990 руб.</span>
-        <a href="" class="btn promo__btn">Заказать</a>
-      </div>
-      <div class="promo__img-wrapper">
-        <img src="img/promo__info" width="260" height="315" alt="фотография товара">
+    <div class="page-header__promo-wrapper">
+      <section class="promo page-main__promo">
+        <div class="promo__title-wrapper">
+          <h3 class="promo__title">Вязаные корзинки</h3>
+          <span class="promo__week">Товар<br class="page-header__title--br"/> недели</span>
+        </div>
+        <div class="promo__info">
+          <div class="promo__descr-table-wrap">
+            <p class="promo__descr">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
+            <table class="promo__table">
+              <tr class="promo__row">
+                <td class="promo__cell promo__row-title">Цвет</td>
+                <td class="promo__cell promo__value">"Тиффани"/серый</td>
+              </tr>
+              <tr class="promo__row">
+                <td class="promo__cell promo__row-title">Диаметр</td>
+                <td class="promo__cell promo__value">25 см</td>
+              </tr>
+              <tr class="promo__row">
+                <td class="promo__cell promo__row-title">Высота</td>
+                <td class="promo__cell promo__value">15 см</td>
+              </tr>
+            </table>
+          </div>
+          <div class="promo__img-wrapper">
+            <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="фотография товара">
+          </div>
+          <div class="promo__cost-wrapper">
+            <span class="promo__cost">Цена: 990 руб.</span>
+            <a href="#" class="btn promo__btn">Заказать</a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section class="advantages page-main__advantages">
+      <div class="advantages__wrapper">
+        <h3 class="advantages__title">Коротко о нас:</h3>
+        <div class="advantages__list-wrapper">
+          <ul class="advantages__list">
+            <li class="advantages__item">Экологически<br class="advantages__br"> чистые материалы</li>
+            <li class="advantages__item">Скандинавский стиль<br class="advantages__br"> по российской цене</li>
+            <li class="advantages__item">Увеличивает лайки<br class="advantages__br"> на фотографиях</li>
+          </ul>
+          <ul class="advantages__list">
+            <li class="advantages__item">Связано вручную с<br class="advantages__br"> любовью и умилением</li>
+            <li class="advantages__item">Поддержка отечественного<br class="advantages__br"> производителя</li>
+            <li class="advantages__item">Поставляется в<br class="advantages__br"> подарочной упаковке</li>
+          </ul>
+        </div>
       </div>
     </section>
-    <section class="advantages">
-      <h3 class="advantages__title">Коротко о нас:</h3>
-      <ul class="advantages__list">
-        <li class="advantages__item">Экологически чистые материалы</li>
-        <li class="advantages__item">Связано вручную с любовью и умилением</li>
-        <li class="advantages__item">Скандинавский стиль по российской цене</li>
-        <li class="advantages__item">Поддержка отечественного производителя</li>
-        <li class="advantages__item">Увеличивает лайки на фотографиях</li>
-        <li class="advantages__item">Поставляется в подарочной упаковке</li>
-      </ul>
-    </section>
-    <section class="reviews">
-      <h3 class="reviews__title">Отзывы</h3>
-      <ul class="sreviews__list slider">
-        <li class="reviews__item">
-          <blockquote class="reviews__descr slider__item">
-            Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-            <cite class="reviews__auhor-name">Анастасия Красильникова</cite>
-            <span class="reviews__name">@misssssiskras</span>
-          </blockquote>
-        </li>
-        <li class="reviews__item">
-          <blockquote class="reviews__descr slider__item">
-            Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-            <cite class="reviews__auhor-name">Анастасия Красильникова</cite>
-            <span class="reviews__name">@misssssiskras</span>
-          </blockquote>
-        </li>
-      </ul>
-      <div class="slider-controls">
-        <button class="slider-controls-prev">назад</button>
-        <button class="slider-controls-prev">вперед</button>
+    <section class="reviews page-main__reviews">
+      <div class="reviews__wrapper">
+        <h3 class="reviews__title">Отзывы</h3>
+        <ul class="reviews__list slider">
+          <li class="reviews__item">
+            <blockquote class="reviews__descr slider__item">
+              <p class="reviews__content">
+                Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+              </p>
+              <cite class="reviews__auhor-name">Анастасия Красильникова</cite>
+              <a href="#" class="reviews__name">@misssssiskras</a>
+            </blockquote>
+          </li>
+          <li class="reviews__item">
+            <blockquote class="reviews__descr slider__item">
+              <p class="reviews__content">
+                Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+              </p>
+              <cite class="reviews__auhor-name">Анастасия Красильникова</cite>
+              <span class="reviews__name">@misssssiskras</span>
+            </blockquote>
+          </li>
+        </ul>
+        <div class="slider-controls">
+          <button class="slider-controls-prev">назад</button>
+          <button class="slider-controls-prev">вперед</button>
+        </div>
+        <a href="#" class="btn reviews__btn">Написать</a>
       </div>
-      <a href="#" class="btn reviews__btn">Написать</a>
     </section>
     <section class="contacts">
       <h3 class="contacts__title">Контакты</h3>

@@ -1,5 +1,7 @@
 
 .main-menu {
+  display: flex;
+  flex-direction: column;
   .ul-reset();
 }
 .main-menu__item{
@@ -16,9 +18,14 @@
   .font( 17px; 24px; bold; #000000);
 }
 @media @tablet-width {
+  .main-menu {
+    flex-direction: row;
+  }
   .main-menu__item {
+    display: flex;
+    flex-grow: 1;
     align-self: center;
-    width: 50%;
+    min-width: 50%;
     border-bottom: none;
   }
  // .main-menu__item:nth-child(n+3) {
@@ -26,6 +33,7 @@
  //  display: block;
  //  }
   .main-menu__link {
+    flex-grow: 1;
     padding: 22px 10px 22px 0;
     font-size: 15px;
   }
