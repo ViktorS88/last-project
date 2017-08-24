@@ -1,37 +1,112 @@
-.reviews {
-    background: url("img/review@1x.jpg") no-repeat;
-}
-
 .reviews__wrapper {
+  position: relative;
   .container();
   .container-padding();
+  display: flex;
+  flex-direction: column;
+  @media @tablet-width {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -80px;
+      left: -50px;
+      width: 350px;
+      height: 457px;
+      background: url("../img/review@1x.jpg") no-repeat;
+      // background-position: 25px 25px;
+      z-index: -1;
+    }
+  }
+  @media @desktop-width {
+    &::before {
+      left: 0;
+    }
+  }
 }
 .reviews__title {
   margin: 0;
   margin-bottom: 25px;
+  .font(25px; 30px; bold; #000000);
+  @media @tablet-width {
+    order: 1;
+    margin-bottom: 55px;
+    width: 65%;
+    .font(43px; 50px; bold; #000000);
+  }
+  @media @desktop-width {
+    padding-left: 175px;
+    width: 700px;
+    .font(53px; 57px; bold; #000000);
+  }
 }
 .reviews__list {
   .ul-reset();
+  @media @tablet-width {
+    order: 3;
+  }
+  @media @desktop-width {
+    padding-left: 175px;
+  }
 }
 .reviews__descr {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   margin: 0;
   .font(15px; 30px; normal; #444444);
   margin-bottom: 25px;
+  @media @tablet-width {
+    order: 3;
+    flex-direction: row;
+    margin-bottom: 0;
+
+  }
 }
 .reviews__content {
+  margin: 0;
   margin-bottom: 25px;
+  @media @tablet-width {
+    margin-bottom: 60px;
+  }
 }
 .reviews__auhor-name {
   margin: 0;
   margin-bottom: 5px;
-  .font(18px; 24px; bold; #000000);
+  width: 100%;
+  box-sizing: border-box;
+  .font(17px; 24px; bold; #000000);
   font-style: normal;
+  @media @tablet-width {
+    margin-bottom: 10px;
+  }
 }
 .reviews__name {
   margin: 0;
   text-decoration: none;
   .font(17px; 30px; bold; #444444);
+  @media @tablet-width {
+    width: 100%;
+    margin-bottom: 0;
+  }
 }
 .reviews__button {
     margin-bottom: 38px;
+    @media @tablet-width {
+      position: absolute;
+      right: 20px;
+      bottom: -7px;
+    }
+}
+.reviews__btn {
+  width: 100%;
+  box-sizing: border-box;
+  @media @tablet-width {
+    width: 26.2%;
+    order: 2;
+    align-self: flex-start;
+    max-width: 171px;
+  }
 }

@@ -3,8 +3,8 @@
   .container();
   z-index: 1;
 }
-@media @tablet-width {
-  .page-header::before {
+  &::before {
+    @media @tablet-width {
     content: "";
     position: absolute;
     top: 88px;
@@ -13,6 +13,4 @@
     height: 200px;
     z-index: -1;
   }
-}
-@media @desktop-width {
 }

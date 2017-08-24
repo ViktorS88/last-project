@@ -12,10 +12,14 @@
   margin: 0;
   padding: 0;
   border: 1px solid #ececec;
+  box-sizing: border-box;
   background-color: transparent;
   font-size: 0;
   cursor: pointer;
-
+    @media @tablet-width {
+      width:70px;
+      border: none;
+    }
   &::before {
     content: "";
     position: absolute;
@@ -23,18 +27,27 @@
     width: 13px;
     height: 13px;
     border: 3px solid #000000;
+    @media @tablet-width {
+      top: 17.5px;
+    }
   }
   &--prev::before {
     border-top: none;
     border-right: none;
     left: 30%;
     transform: rotate(45deg);
+    @media @tablet-width {
+      left: 0;
+    }
   }
   &--next::before {
     border-top: none;
     border-left: none;
     right: 30%;
     transform: rotate(-45deg);
+    @media @tablet-width {
+      right: 0;
+    }
   }
 
     &::after {
@@ -49,11 +62,17 @@
     left: 30%;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
+    @media @tablet-width {
+      left: 0;
+    }
   }
   &--next::after {
 
     right: 30%;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
+    @media @tablet-width {
+      right: 0;
+    }
   }
 }

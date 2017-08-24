@@ -1,3 +1,11 @@
+.nav {
+  @media @tablet-width {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
 .nav__logo {
   display: flex;
   justify-content: center;
@@ -5,11 +13,27 @@
   min-height: 80px;
   text-align: center;
   border-bottom: 1px solid #ececec;
+  @media @tablet-width {
+    justify-content: flex-start;
+    width: 25%;
+    box-sizing: border-box;
+    min-height: 88px;
+    order: 1;
+    border-bottom: none;
+  }
+  @media @desktop-width {
+    order: 2;
+    width: 14.2%;
+    box-sizing: border-box;
+    justify-content: center;
+  }
 }
+
 .nav__logo-img {
   width: 86px;
   height: 35px;
 }
+
 .nav--closed .nav__toggle {
   position: absolute;
   top: 32px;
@@ -26,9 +50,7 @@
     width: 20px;
     height: 2px;
     background-color: #221f1f;
-    box-shadow:
-    0 6px 0 0 #221f1f,
-    0 12px 0 0 #221f1f;
+    box-shadow: 0 6px 0 0 #221f1f, 0 12px 0 0 #221f1f;
   }
 }
 
@@ -41,7 +63,8 @@
   cursor: pointer;
   font-size: 0;
 
-  &::after, &::before {
+  &::after,
+  &::before {
     content: "";
     position: absolute;
     top: 9px;
@@ -49,9 +72,11 @@
     height: 2px;
     background-color: #221f1f;
   }
+
   &::after {
     transform: rotate(45deg);
   }
+
   &::before {
     transform: rotate(-45deg);
   }
@@ -63,88 +88,79 @@
   display: none;
 }
 
-.nav--nojs .nav__main-menu,
-.nav--nojs .nav__user-menu {
-  display: block;
-}
-
-.nav--nojs .nav__toggle {
-  display: none;
-}
-.nav__post {
-display: none;
-}
-//==========стили для планшета ============
-
-@media @tablet-width {
-  .nav .nav__main-menu,
-  .nav .nav__user-menu {
+.nav .nav__main-menu,
+.nav .nav__user-menu {
+  @media @tablet-width {
     display: block;
   }
-  .nav .nav__toggle {
-    display: none;
-  }
-  .nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .nav__logo {
-    justify-content: flex-start;
-    width: 25%;
-    box-sizing: border-box;
-    min-height: 88px;
-    order: 1;
-    border-bottom: none;
-  }
-  .nav .nav__main-menu {
+}
+
+.nav .nav__main-menu {
+  @media @tablet-width {
     display: flex;
     flex-wrap: wrap;
     order: 3;
     width: 50%;
     box-sizing: border-box;
   }
-  .nav .nav__main-menu:nth-of-type(n+2) {
+  @media @desktop-width {
+    position: relative;
+    order: 1;
+    width: 42.85%;
+    box-sizing: border-box;
+  }
+}
+
+.nav--nojs .nav__main-menu,
+.nav--nojs .nav__user-menu {
+  display: block;
+}
+
+.nav .nav__main-menu:nth-of-type(n+2) {
+  @media @tablet-width {
     display: none;
   }
-  .nav .nav__user-menu {
+  @media @desktop-width {
+    order: 4;
+    display: flex;
+  }
+}
+
+.nav .nav__user-menu {
+  @media @tablet-width {
     display: flex;
     order: 2;
     justify-content: flex-end;
     width: 75%;
     box-sizing: border-box;
   }
-  .nav__post {
-  display: block;
-  order: 4;
-  padding-top: 22px;
-  .font(15px; 24px; normal; #444444);
-  }
-}
-@media @desktop-width {
-  .nav__logo {
-    order: 2;
-    width: 14.2%;
-    box-sizing: border-box;
-    justify-content: center;
-  }
-  .nav .nav__main-menu {
-    position: relative;
-    order: 1;
-    width: 42.85%;
-    box-sizing: border-box;
-  }
-  .nav .nav__main-menu:nth-of-type(n+2) {
-    order: 4;
-    display: flex;
-  }
-  .nav .nav__user-menu {
+  @media @desktop-width {
     order: 3;
     width: 42.85%;
     box-sizing: border-box;
   }
-  .nav__post {
-  order: 5;
-  padding-top: 22px;
+}
+
+.nav--nojs .nav__toggle {
+  display: none;
+}
+
+.nav .nav__toggle {
+  @media @tablet-width {
+    display: none;
+  }
+}
+
+.nav__post {
+  display: none;
+  @media @tablet-width {
+    display: block;
+    order: 4;
+    padding-top: 22px;
+    .font(15px; 24px; normal; #444444);
+  }
+  @media @desktop-width {
+    order: 5;
+    padding-top: 22px;
   }
 }
